@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.code-editor {
+  flex: 1;
+}
+
+.preview {
+  flex: 1;
+  border-left: 1px solid #ccc;
+  padding: 20px;
+}

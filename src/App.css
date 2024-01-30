@@ -1,24 +1,9 @@
 body {
-  background-color: #000000; /* Noir */
-  color: #FFFFFF; /* Blanc */
-  font-family: 'Roboto', sans-serif;
-}
-
-.header {
-  background-color: #001F3F; /* Bleu Foncé */
-}
-
-.navbar {
-  background-color: #001F3F; /* Bleu Foncé */
-}
-
-.link {
-  color: #0074CC; /* Bleu Clair */
-}
-
-.footer {
-  background-color: #8E44AD; /* Violet */
-  color: #FFFFFF; /* Blanc */
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #f2f2f2;
 }
 
 .App {
@@ -37,10 +22,9 @@ body {
 }
 
 .App-header {
+  width: 100%;
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -62,16 +46,50 @@ body {
 
 .app {
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  flex-direction: column;
 }
 
 .code-editor {
   flex: 1;
 }
 
+.ce {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+}
+
 .preview {
   flex: 1;
   border-left: 1px solid #ccc;
   padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #212121; /* Couleur de fond de la navbar */
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #61dafb; /* Couleur du logo */
+}
+
+button {
+  margin-left: 1em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #61dafb; /* Couleur des boutons */
+  color: white; /* Couleur du texte des boutons */
+  border: none;
+  border-radius: 5px;
+}
+
+.user-name {
+  margin-left: 1em;
 }

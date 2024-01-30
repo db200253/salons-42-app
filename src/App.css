@@ -1,3 +1,26 @@
+body {
+  background-color: #000000; /* Noir */
+  color: #FFFFFF; /* Blanc */
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background-color: #001F3F; /* Bleu Foncé */
+}
+
+.navbar {
+  background-color: #001F3F; /* Bleu Foncé */
+}
+
+.link {
+  color: #0074CC; /* Bleu Clair */
+}
+
+.footer {
+  background-color: #8E44AD; /* Violet */
+  color: #FFFFFF; /* Blanc */
+}
+
 .App {
   text-align: center;
 }

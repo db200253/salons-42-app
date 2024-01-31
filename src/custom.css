@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'FuturaPT-Bold';
+  src: url('./fonts/FuturaPTBold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT-Book';
+  src: url('./fonts/FuturaPTBook.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT-Light';
+  src: url('./fonts/FuturaPTLight.otf') format('opentype');
+  font-weight: lighter;
+  font-style: normal;
+}

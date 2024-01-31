@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import CodeEditor from './components/CodeEditor';
 import Footer from './components/Footer';
 import './App.css';
+import './custom.css';
 
 const App = () => {
   const [previewCode, setPreviewCode] = useState(null);

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AceEditor from 'react-ace';
 import 'ace-builds/src-noconflict/mode-html';
 import 'ace-builds/src-noconflict/theme-monokai';
+import 'ace-builds/src-noconflict/ext-language_tools';
 
 const CodeEditor = ({ onCodeChange }) => {
   const [code, setCode] = useState('');
@@ -20,6 +21,8 @@ const CodeEditor = ({ onCodeChange }) => {
         value={code}
         name="code-editor"
         editorProps={{ $blockScrolling: true }}
+	enableBasicAutocompletion={true}
+        enableLiveAutocompletion={true}
       />
     </div>
   );

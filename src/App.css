@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: "FuturaPT-Book";
     background-color: #333;
-    color: #f2f2f2;
+    color: #fff;
 }
 
 .App {
@@ -27,7 +27,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10vh);
   color: white;
   justify-content: space-between; 
   padding: 2vh 16vw;
@@ -82,14 +82,6 @@ body {
   }
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
-  background-color: #212121; /* Couleur de fond de la navbar */
-}
-
 button {
   cursor: pointer;
   background-color: #00babc; /* Couleur des boutons */
@@ -101,6 +93,7 @@ button {
 }
 
 .user-name {
+  font-size: calc(10vh);
   margin-left: 1em;
 }
 
@@ -108,7 +101,8 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    right: 0;
+    width: 100%;
     height: 10vh;
     display: flex;
     margin-bottom: 5vh;

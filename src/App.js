@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div className="app">
-	<div>
+	<div className="hero">
 	    <Navbar />
 	</div>
 	<div className="ce">

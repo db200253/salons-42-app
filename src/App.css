@@ -29,6 +29,8 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  justify-content: space-between; 
+  padding: 2vh 16vw;
 }
 
 .App-link {
@@ -51,6 +53,7 @@ body {
 
 .code-editor {
   flex: 1;
+  margin: 5vh;
 }
 
 .ce {
@@ -63,6 +66,7 @@ body {
   flex: 1;
   border-left: 1px solid #ccc;
   padding: 20px;
+  margin: 5vh;
 }
 
 nav {
@@ -92,4 +96,14 @@ button {
 
 .user-name {
   margin-left: 1em;
+}
+
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    margin-bottom: 5vh;
 }

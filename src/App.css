@@ -52,21 +52,34 @@ body {
 }
 
 .code-editor {
+  width: 50vw;
   flex: 1;
   margin: 5vh;
 }
 
 .ce {
+  margin: 10vh;
   display: flex;
   flex-direction: row;
-  margin: 5%;
 }
 
 .preview {
+  width: 50vw;
   flex: 1;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #fff;
   padding: 20px;
   margin: 5vh;
+}
+
+@media (max-width: 767px) {
+  .ce {
+    flex-direction: column;
+  }
+
+  .preview {
+    border-left: none;
+    border-top: 1px solid #fff;
+  }
 }
 
 nav {
@@ -77,21 +90,14 @@ nav {
   background-color: #212121; /* Couleur de fond de la navbar */
 }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #61dafb; /* Couleur du logo */
-}
-
 button {
-  margin-left: 1em;
-  padding: 0.5em 1em;
-  font-size: 1em;
   cursor: pointer;
-  background-color: #61dafb; /* Couleur des boutons */
+  background-color: #00babc; /* Couleur des boutons */
   color: white; /* Couleur du texte des boutons */
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 10vw;
+  height: 5vh;
 }
 
 .user-name {
@@ -106,4 +112,6 @@ button {
     height: 10vh;
     display: flex;
     margin-bottom: 5vh;
+    z-index: 1000;
+    background-color: #173d7a;
 }

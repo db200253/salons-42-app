@@ -16,7 +16,7 @@ const App = () => {
 	<div>
 	    <Navbar />
 	</div>
-	<div class="ce">
+	<div className="ce">
 	    <CodeEditor onCodeChange={handleCodeChange} />
 	    <div className="preview">
 		{/* Afficher ici la zone de rendu en direct */}

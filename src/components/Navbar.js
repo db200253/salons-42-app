@@ -4,6 +4,17 @@ const Navbar = () => {
   const [userName, setUserName] = useState('');
   const [showUserName, setShowUserName] = useState(false);
 
+    const getLogo = () => {
+	let lien = process.env.PUBLIC_URL + "/logo-42LH.png";
+	return (
+	    <div>
+		<a href="https://www.42lehavre.fr/">
+		    <img src={lien} alt="Logo 42" height="60" />
+		</a>
+	    </div>
+	);
+    };
+    
   const handleTutorialClick = () => {
     // Logique pour lancer le tutoriel
     console.log('Lancer le tutoriel');
@@ -25,8 +36,8 @@ const Navbar = () => {
   };
 
   return (
-    <header class="App-header">
-	<div className="logo">Logo</div>
+    <header className="App-header">
+	{getLogo()}
 	<button onClick={handleTutorialClick}>Lancer le Tutoriel</button>
 	<button onClick={handleResetClick}>Reset</button>
 	<button onClick={handleEnterName}>Entrer le Nom</button>

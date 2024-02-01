@@ -23,7 +23,7 @@ const App = () => {
 		{/* Afficher ici la zone de rendu en direct */}
 		<h2>Rendu en Direct :</h2>
 		{previewCode !== null ? (
-		    <div dangerouslySetInnerHTML={{ __html: previewCode }} />
+		    <div className="render-zone" dangerouslySetInnerHTML={{ __html: previewCode }} />
 		) : (
 		    <p>Aucun code à afficher pour le moment.</p>
 		)}

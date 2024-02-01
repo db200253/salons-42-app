@@ -1,14 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AceEditor from 'react-ace';
 import 'ace-builds/src-noconflict/mode-html';
 import 'ace-builds/src-noconflict/theme-monokai';
 import 'ace-builds/src-noconflict/ext-language_tools';
 
 const CodeEditor = ({ onCodeChange }) => {
-  const [code, setCode] = useState('');
-
-  useEffect(() => {
-      const initialCode = `<!DOCTYPE html>
+  const [code, setCode] = useState(`<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -20,11 +17,7 @@ const CodeEditor = ({ onCodeChange }) => {
   <body>
     <!-- Change me -->
   </body>
-</html>
-`;    
-    setCode(initialCode);
-    onCodeChange(initialCode);
-  }, [onCodeChange]);
+</html>`);
 
   const handleChange = (value) => {
     setCode(value);

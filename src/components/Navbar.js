@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Navbar = () => {
-  const [userName, setUserName] = useState('');
-  const [showUserName, setShowUserName] = useState(false);
 
     const getLogo = () => {
 	let lien = process.env.PUBLIC_URL + "/logo-42LH.png";
@@ -23,25 +21,13 @@ const Navbar = () => {
   const handleResetClick = () => {
     // Logique pour reset
     console.log('Reset');
-    setUserName('');
-    setShowUserName(false);
-  };
-
-  const handleEnterName = () => {
-    const name = prompt('Entrez votre nom :');
-    if (name) {
-      setUserName(name);
-      setShowUserName(true);
-    }
   };
 
   return (
-    <header className="App-header">
-	{getLogo()}
+      <header className="App-header">
 	<button onClick={handleTutorialClick}>Lancer le Tutoriel</button>
+	{getLogo()}
 	<button onClick={handleResetClick}>Reset</button>
-	<button onClick={handleEnterName}>Entrer le Nom</button>
-	{showUserName && <div className="user-name">Bonjour, {userName} !</div>}
     </header>
   );
 };

@@ -90,11 +90,12 @@ button {
   border-radius: 10px;
   width: 10vw;
   height: 5vh;
+  font-size: 2vh 
 }
 
-.user-name {
-  font-size: calc(10vh);
-  margin-left: 1em;
+button:hover {
+  background-color: #475b67;
+  border-color: #00babc;
 }
 
 .hero {

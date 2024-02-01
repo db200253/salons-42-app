@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ onStartTutorial }) => {
 
     const getLogo = () => {
 	let lien = process.env.PUBLIC_URL + "/logo-42LH.png";
@@ -13,10 +13,6 @@ const Navbar = () => {
 	);
     };
     
-  const handleTutorialClick = () => {
-    // Logique pour lancer le tutoriel
-    console.log('Lancer le tutoriel');
-  };
 
   const handleResetClick = () => {
     // Logique pour reset
@@ -25,7 +21,7 @@ const Navbar = () => {
 
   return (
       <header className="App-header">
-	<button onClick={handleTutorialClick}>Lancer le Tutoriel</button>
+	<button onClick={onStartTutorial}>Lancer le Tutoriel</button>
 	{getLogo()}
 	<button onClick={handleResetClick}>Reset</button>
     </header>

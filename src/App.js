@@ -4,6 +4,7 @@ import CodeEditor from './components/CodeEditor';
 import Footer from './components/Footer';
 import ModalComponent from './components/ModalComponent';
 import './App.css';
+import './Background.scss';
 import './custom.css';
 
 const App = () => {
@@ -49,7 +50,7 @@ const App = () => {
     setResetCode(false);
   }
     
-  return (
+    return (
     <div className="app">
       <div className="hero">
         <Navbar

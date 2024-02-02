@@ -48,6 +48,7 @@ const CodeEditor = ({ onCodeChange, reset, resetToFalse }) => {
         editorProps={{ $blockScrolling: true }}
         enableBasicAutocompletion={true}
         enableLiveAutocompletion={true}
+	height="60vh"
       />
     </div>
   );

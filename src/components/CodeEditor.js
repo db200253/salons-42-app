@@ -18,7 +18,7 @@ const DEFAULT_HTML_CODE = `<!DOCTYPE html>
   </body>
 </html>`;
 
-const CodeEditor = ({ onCodeChange, resetCode }) => {
+const CodeEditor = ({ onCodeChange, reset, resetToFalse }) => {
   const [code, setCode] = useState(DEFAULT_HTML_CODE);
 
   const handleChange = (newCode) => {
@@ -28,14 +28,14 @@ const CodeEditor = ({ onCodeChange, resetCode }) => {
 
   const handleResetCode = useCallback(() => {
     setCode(DEFAULT_HTML_CODE);
-    onCodeChange(DEFAULT_HTML_CODE);
-  }, [onCodeChange]);
+  }, []);
 
   useEffect(() => {
-    if (resetCode) {
+    if (reset) {
       handleResetCode();
+      resetToFalse();
     }
-  }, [resetCode, handleResetCode]);
+  }, [reset, handleResetCode, resetToFalse]);
 
   return (
     <div className="code-editor">

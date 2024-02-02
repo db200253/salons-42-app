@@ -42,6 +42,11 @@ const App = () => {
 
   const handleResetCode = () => {
     setResetCode(true);
+    setPreviewCode(null);
+  }
+
+  const resetToFalse = () => {
+    setResetCode(false);
   }
     
   return (
@@ -57,6 +62,7 @@ const App = () => {
         <CodeEditor
           onCodeChange={handleCodeChange}
 	  reset={resetCode}
+	  resetToFalse={resetToFalse}
         />
         <div className="preview">
           <h2>Rendu en Direct :</h2>

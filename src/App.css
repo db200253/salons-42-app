@@ -97,6 +97,10 @@ button:hover {
   background-color: #475b67;
 }
 
+button:disabled {
+  background-color: #475b67;
+}
+
 .hero {
     position: fixed;
     top: 0;
@@ -106,7 +110,7 @@ button:hover {
     height: 10vh;
     display: flex;
     margin-bottom: 5vh;
-    z-index: 1000;
+    z-index: 10000;
     background-color: #173d7a;
 }
 
@@ -116,8 +120,20 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  background-color: #fff;
+  background-color: #444;
   border: 1px solid #ddd;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 9999;
+}
+
+.boutons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5vw;
 }

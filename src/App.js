@@ -11,7 +11,7 @@ const App = () => {
   const [tutorialStep, setTutorialStep] = useState(1);
   const [isTutorialActive, setIsTutorialActive] = useState(false);
   const [resetCode, setResetCode] = useState(false);
-  const maxSteps = 4;
+  const maxSteps = 5;
 
   const handleNext = () => {
     if (tutorialStep < maxSteps) {

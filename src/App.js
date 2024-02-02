@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import CodeEditor from './components/CodeEditor';
 import Footer from './components/Footer';
@@ -10,50 +10,55 @@ const App = () => {
   const [previewCode, setPreviewCode] = useState(null);
   const [tutorialStep, setTutorialStep] = useState(1);
   const [isTutorialActive, setIsTutorialActive] = useState(false);
-  const [currentStep, setCurrentStep] = useState(1); // Nouvelle variable d'état
+  const [resetCode, setResetCode] = useState(false);
   const maxSteps = 4;
-
-  const handleCodeChange = (code) => {
-    setPreviewCode(code);
-  };
 
   const handleNext = () => {
     if (tutorialStep < maxSteps) {
       setTutorialStep(tutorialStep + 1);
-      setCurrentStep(tutorialStep + 1); // Met à jour currentStep
     } else {
       setIsTutorialActive(false);
-      setCurrentStep(1); // Réinitialise currentStep lorsque le tutoriel se termine
+      setTutorialStep(1);
     }
   };
 
   const handlePrev = () => {
     if (tutorialStep > 1) {
       setTutorialStep(tutorialStep - 1);
-      setCurrentStep(tutorialStep - 1); // Met à jour currentStep
     }
   };
 
   const handleStartTutorial = () => {
     setIsTutorialActive(true);
-    setTutorialStep(currentStep); // Commence le tutoriel à l'étape actuelle
   };
 
-  useEffect(() => {
-    if (isTutorialActive) {
-      setTutorialStep(currentStep); // Met à jour l'étape du tutoriel si currentStep change
-    }
-  }, [currentStep, isTutorialActive]);
+  const handleCodeChange = (code) => {
+    setPreviewCode(code);
+  };
 
+  const handleResetTuto = () => {
+    setTutorialStep(1);
+  }
+
+  const handleResetCode = () => {
+    setResetCode(true);
+  }
+    
   return (
     <div className="app">
       <div className="hero">
-        <Navbar onStartTutorial={handleStartTutorial} />
+        <Navbar
+          onStartTutorial={handleStartTutorial}
+          onResetTutorial={handleResetTuto}
+	  onResetCode={handleResetCode}
+        />
       </div>
       <div className="ce">
-        <CodeEditor onCodeChange={handleCodeChange} />
+        <CodeEditor
+          onCodeChange={handleCodeChange}
+	  reset={resetCode}
+        />
         <div className="preview">
-          {/* Afficher ici la zone de rendu en direct */}
           <h2>Rendu en Direct :</h2>
           {previewCode !== null ? (
             <div className="render-zone" dangerouslySetInnerHTML={{ __html: previewCode }} />

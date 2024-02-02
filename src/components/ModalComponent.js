@@ -2,7 +2,7 @@ import React from 'react';
 
 const ModalComponent = ({ step, onNext, onPrev, onClose, maxSteps }) => {
   const content = getContentForStep(step);
-
+    
   return (
     <div className="modal">
       {/* Contenu spécifique à chaque étape */}

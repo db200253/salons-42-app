@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({ onStartTutorial }) => {
+const Navbar = ({ onStartTutorial, onResetTutorial, onResetCode }) => {
 
     const getLogo = () => {
 	let lien = process.env.PUBLIC_URL + "/logo-42LH.png";
@@ -15,8 +15,8 @@ const Navbar = ({ onStartTutorial }) => {
     
 
   const handleResetClick = () => {
-    // Logique pour reset
-    console.log('Reset');
+      onResetTutorial();
+      onResetCode();
   };
 
   return (

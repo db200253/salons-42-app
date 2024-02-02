@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/salons-42-app/static/css/main.a5045f03.css",
-    "main.js": "/salons-42-app/static/js/main.a4657966.js",
+    "main.css": "/salons-42-app/static/css/main.4e9a9ffa.css",
+    "main.js": "/salons-42-app/static/js/main.1aa40179.js",
     "static/media/FuturaPTBold.otf": "/salons-42-app/static/media/FuturaPTBold.b22b8109a56a2445c366.otf",
     "static/media/FuturaPTLight.otf": "/salons-42-app/static/media/FuturaPTLight.725c77b4e125ed776783.otf",
     "static/media/FuturaPTBook.otf": "/salons-42-app/static/media/FuturaPTBook.bc305be0a88a100ad836.otf",
     "index.html": "/salons-42-app/index.html",
-    "main.a5045f03.css.map": "/salons-42-app/static/css/main.a5045f03.css.map",
-    "main.a4657966.js.map": "/salons-42-app/static/js/main.a4657966.js.map"
+    "main.4e9a9ffa.css.map": "/salons-42-app/static/css/main.4e9a9ffa.css.map",
+    "main.1aa40179.js.map": "/salons-42-app/static/js/main.1aa40179.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5045f03.css",
-    "static/js/main.a4657966.js"
+    "static/css/main.4e9a9ffa.css",
+    "static/js/main.1aa40179.js"
   ]
 }

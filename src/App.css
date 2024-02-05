@@ -135,9 +135,14 @@ button:disabled {
 }
 
 .logos {
+  position: relative;
   display: flex;
   justify-content: space-around;
   margin: 0 5vw;
+}
+
+.logos img {
+  position: relative;
 }
 
 .footer {

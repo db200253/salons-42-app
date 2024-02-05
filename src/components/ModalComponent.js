@@ -4,7 +4,7 @@ const ModalComponent = ({ step, onNext, onPrev, onClose, maxSteps }) => {
   const content = getContentForStep(step);
 
   const imageStyle = {
-    height: step === maxSteps ? 120 : 'auto',
+    height: step === maxSteps ? 120 : 300,
   };
     
   return (
